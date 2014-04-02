@@ -5,4 +5,4 @@ Webpage for LCC 3404 Technical Communication with [Dr.Robinson](http://joyrobins
 
 Team #1 CIA
 
-Uniform resource locator for webpage is (http://teknocrat.github.io/LCC3403-Website/)
+Uniform resource locator for webpage is http://teknocrat.github.io/LCC3403-Website/
