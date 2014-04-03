@@ -23,6 +23,7 @@
       right: 10px;
     }
   </style>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
   
   <title>CIA - Commitee for Innovation Advancement</title>
 </head>
@@ -79,5 +80,28 @@
       </div>
     </div>
   </div>
+  <script>
+    /* thanks chris coyier: http://css-tricks.com/scrollfollow-sidebar/ */
+    $(function() {
+
+      var $sidebar   = $("#sidebar"), 
+          $window    = $(window),
+          offset     = $sidebar.offset(),
+          topPadding = 15;
+  
+      $window.scroll(function() {
+          if ($window.scrollTop() > offset.top) {
+              $sidebar.stop().animate({
+                  marginTop: $window.scrollTop() - offset.top + topPadding
+              });
+          } else {
+              $sidebar.stop().animate({
+                  marginTop: 0
+              });
+          }
+      });
+      
+    });
+  </script>
 </body>
 </html>
