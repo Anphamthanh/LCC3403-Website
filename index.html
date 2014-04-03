@@ -22,6 +22,29 @@
       top: 0;
       right: 10px;
     }
+	.form {
+		background-color: transparent;
+		line-height: 3rem;
+		border-radius: 5px;
+		border: 1px solid #2879d0;
+		padding: 1rem;
+		display: table-cell;
+		vertical-align: middle;
+		width: 35rem;
+		color: #2879d0;
+	}
+	.form input {
+		border-radius: 5px;
+		margin-bottom: 1rem;
+		float: right;
+		width: 50%;
+		border: 2px solid #2879d0;
+		height: 1.5rem;
+		font-weight: bold;
+	}
+	.form input:hover, .form input:focus {
+		border-color: #9879a7;
+	}
   </style>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
   
@@ -43,6 +66,7 @@
             <a class="button" href="#inventions">Inventions</a>
             <a class="button" href="#innovators">Innovators</a>
             <a class="button" href="#investors">Investors</a>
+			<a class="button" href="#apply">Apply Now</a>
       </aside>
       
       <!-- TODO We need pictures! (to fulfill the requirements of the project)-->
@@ -136,6 +160,18 @@
           <!-- TODO Should we put fake content here? -->
           <p>Got something awesome to put here? Apply now and make an impact!</p>
         </section>
+		
+		<section id="apply">
+			<a href="#apply">
+				<h2>Application</h2>
+			</a>
+			<form class="form" method="post" action="none">
+				<label class="input-label" for="first-name">First name:</label>
+				<input type="text" name="first_name" id="first-name" /><br />
+				<label class="input-label" for="last-name">Last name:</label>
+				<input type="text" name="last_name" id="last-name" />
+			</form> 
+		</section>
       </div>
     </div>
   </div>
