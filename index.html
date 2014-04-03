@@ -17,8 +17,10 @@
     section {
       width: 690px;
     }
-    aside {
-      /* TODO position: absolute; */
+    .inner aside#sidebar {
+      position: absolute;
+      top: 0;
+      right: 10px;
     }
   </style>
   
@@ -33,14 +35,15 @@
   </header>
     
   <div id="content-wrapper">
-    <aside id="sidebar">
-          <a class="button" href="#whois">Who Is the CIA?</a>
-          <a class="button" href="#inventions">Inventions</a>
-          <a class="button" href="#innovators">Innovators</a>
-          <a class="button" href="#investors">Investors</a>
-    </aside>
-  
     <div id="main-content" class="inner clearfix">
+    
+      <aside id="sidebar" class="myoverride">
+            <a class="button" href="#whois">Who Is the CIA?</a>
+            <a class="button" href="#inventions">Inventions</a>
+            <a class="button" href="#innovators">Innovators</a>
+            <a class="button" href="#investors">Investors</a>
+      </aside>
+      
       <section id="whois">
         <a href="#whois">
           <h2>Who is the CIA?</h2>
