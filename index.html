@@ -14,12 +14,11 @@
   <![endif]-->
   <style>
     /* additional styles on top of bootstrap */
-    body, section {
-      padding-top: 40px;
-    }
     section {
-      margin-bottom: -40px;
       width: 690px;
+    }
+    aside {
+      /* TODO position: absolute; */
     }
   </style>
   
@@ -34,16 +33,12 @@
   </header>
     
   <div id="content-wrapper">
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <ul class="nav">
-          <li class="active"><a href="#whois">Who Is the CIA?</a></li>
-          <li><a href="#inventions">Inventions</a></li>
-          <li><a href="#innovators">Innovators</a></li>
-          <li><a href="#investors">Investors</a></li>
-        </ul>
-      </div>
-    </div>
+    <aside id="sidebar">
+          <a class="button" href="#whois">Who Is the CIA?</a>
+          <a class="button" href="#inventions">Inventions</a>
+          <a class="button" href="#innovators">Innovators</a>
+          <a class="button" href="#investors">Investors</a>
+    </aside>
   
     <div id="main-content" class="inner clearfix">
       <section id="whois">
