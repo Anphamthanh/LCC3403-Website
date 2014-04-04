@@ -22,52 +22,52 @@
       top: 0;
       right: 10px;
     }
-	.form {
-		background-color: transparent;
-		line-height: 3rem;
-		border-radius: 5px;
-		border: 1px solid #2879d0;
-		padding: 1rem;
-		display: table-cell;
-		vertical-align: middle;
-		width: 35rem;
-		color: #2879d0;
-	}
-	.form #apply-button {
-		height: 2rem;
-		margin-right: 25%;
-		cursor: pointer;
-		box-shadow: 1px 1px 1px #888;
-	}
-	.form input {
-		border-radius: 5px;
-		margin-top: 0.5rem;
-		float: right;
-		width: 50%;
-		border: 2px solid #2879d0;
-		height: 1.5rem;
-		font-weight: bold;
-		padding-left: 0.3rem;
-		color: #2879D0;
-	}
-	.form .input-label {
-	}
-	.form select {
-		float: right;
-		width: 51%;
-		border: 2px solid #2879D0;
-		border-radius: 2px;
-		margin-top: 0.5rem;
-		color: #2879D0;
-	}
-	.form input:hover, .form input:focus {
-		border-color: #9879a7;
-		color: #9879a7;
-		background-color: #F2E9F1;
-	}
-	.hidden {
-		display: none;
-	}
+    .form {
+      background-color: transparent;
+      line-height: 3rem;
+      border-radius: 5px;
+      border: 1px solid #2879d0;
+      padding: 1rem;
+      display: table-cell;
+      vertical-align: middle;
+      width: 35rem;
+      color: #2879d0;
+    }
+    .form #apply-button {
+      height: 2rem;
+      margin-right: 25%;
+      cursor: pointer;
+      box-shadow: 1px 1px 1px #888;
+    }
+    .form input {
+      border-radius: 5px;
+      margin-top: 0.5rem;
+      float: right;
+      width: 50%;
+      border: 2px solid #2879d0;
+      height: 1.5rem;
+      font-weight: bold;
+      padding-left: 0.3rem;
+      color: #2879D0;
+    }
+    .form .input-label {
+    }
+    .form select {
+      float: right;
+      width: 51%;
+      border: 2px solid #2879D0;
+      border-radius: 2px;
+      margin-top: 0.5rem;
+      color: #2879D0;
+    }
+    .form input:hover, .form input:focus {
+      border-color: #9879a7;
+      color: #9879a7;
+      background-color: #F2E9F1;
+    }
+    .hidden {
+      
+    }
   </style>
   <script src="./javascripts/jquery.min.js"></script>
   
@@ -184,47 +184,47 @@
           <p>Got something awesome to put here? Apply now and make an impact!</p>
         </section>
 		
-		<section id="apply">
-			<a href="#apply">
-				<h2>Application</h2>
-			</a>
-			<div>
-				Please fill in the application below to be part of the CIA:
-			</div>
-			<br />
-			<form class="form" method="post" id="application-form">
-				<label class="input-label" for="first-name">First name:</label>
-				<input type="text" name="first_name" id="first-name" /><br />
-				<label class="input-label" for="last-name">Last name:</label>
-				<input type="text" name="last_name" id="last-name" /><br />
-				<label class="input-label" for="email">Email:</label>
-				<input type="text" name="email" id="email" /><br />		
-				<label class="input-label" for="role">You are:</label>
-				<select id="role">
-					<option value="student">Student</option>
-					<option value="investor">Investor</option>
-					<option value="staff">Staff</option>
-				</select>
-				<br />
-				<div id="student-info">
-					<label class="input-label" for="major">Major:</label>
-					<input type="text" name="major" id="major" /><br />		
-					<label class="input-label" for="student-id">Student ID:</label>
-					<input type="text" name="student_id" id="student-id" /><br />			
-				</div>
-				<div id="investor-info" class="hidden">
-					<label class="input-label" for="company">Company:</label>
-					<input type="text" name="company" id="company" /><br />
-					<label class="input-label" for="industry">Industry:</label>
-					<input type="text" name="industry" id="industry" /><br />
-				</div>
-				<div id="staff-info" class="hidden">
-					<label class="input-label" for="position">Position:</label>
-					<input type="text" name="position" id="position" /><br />
-				</div>
-				<input type="submit" id="apply-button" value="Apply" />
-			</form> 
-		</section>
+        <section id="apply">
+          <a href="#apply">
+            <h2>Application</h2>
+          </a>
+          <div>
+            Please fill in the application below to be part of the CIA:
+          </div>
+          <br />
+          <form class="form" method="post" id="application-form">
+            <label class="input-label" for="first-name">First name:</label>
+            <input type="text" name="first_name" id="first-name" /><br />
+            <label class="input-label" for="last-name">Last name:</label>
+            <input type="text" name="last_name" id="last-name" /><br />
+            <label class="input-label" for="email">Email:</label>
+            <input type="text" name="email" id="email" /><br />		
+            <label class="input-label" for="role">You are:</label>
+            <select id="role">
+              <option value="student">Student</option>
+              <option value="investor">Investor</option>
+              <option value="staff">Staff</option>
+            </select>
+            <br />
+            <div id="student-info">
+              <label class="input-label" for="major">Major:</label>
+              <input type="text" name="major" id="major" /><br />		
+              <label class="input-label" for="student-id">Student ID:</label>
+              <input type="text" name="student_id" id="student-id" /><br />			
+            </div>
+            <div id="investor-info" class="hidden">
+              <label class="input-label" for="company">Company:</label>
+              <input type="text" name="company" id="company" /><br />
+              <label class="input-label" for="industry">Industry:</label>
+              <input type="text" name="industry" id="industry" /><br />
+            </div>
+            <div id="staff-info" class="hidden">
+              <label class="input-label" for="position">Position:</label>
+              <input type="text" name="position" id="position" /><br />
+            </div>
+            <input type="submit" id="apply-button" value="Apply" />
+          </form> 
+        </section>
 		<div id="submission-modal" class="hidden">
 			<div>
 				Thank you for submitting your application. We will review your application and get back to you shortly.
@@ -258,32 +258,32 @@
       
     });
 	
-	$("#role").change(function() {
-		var role = $("#role").val();
-		console.log(role);
-		switch(role) {
-			case "student":
-				$("#student-info").removeClass("hidden");
-				$("#investor-info").addClass("hidden");
-				$("#staff-info").addClass("hidden");
-				break;
-			case "investor":
-				$("#student-info").addClass("hidden");
-				$("#investor-info").removeClass("hidden");
-				$("#staff-info").addClass("hidden");
-				break;
-			case "staff":
-				$("#student-info").addClass("hidden");
-				$("#investor-info").addClass("hidden");
-				$("#staff-info").removeClass("hidden");
-				break;
-			default:
-				break;
-		}
-	});
-	$("#application-form").submit(function(event) {
-		event.preventDefault();
-	});
+  $("#role").change(function() {
+    var role = $("#role").val();
+    console.log(role);
+    switch(role) {
+      case "student":
+        $("#student-info").removeClass("hidden");
+        $("#investor-info").addClass("hidden");
+        $("#staff-info").addClass("hidden");
+        break;
+      case "investor":
+        $("#student-info").addClass("hidden");
+        $("#investor-info").removeClass("hidden");
+        $("#staff-info").addClass("hidden");
+        break;
+      case "staff":
+        $("#student-info").addClass("hidden");
+        $("#investor-info").addClass("hidden");
+        $("#staff-info").removeClass("hidden");
+        break;
+      default:
+        break;
+    }
+  });
+  $("#application-form").submit(function(event) {
+    event.preventDefault();
+  });
   </script>
 </body>
 </html>
