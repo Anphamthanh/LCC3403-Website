@@ -246,7 +246,7 @@
   
       $window.scroll(function() {
           if ($window.scrollTop() > offset.top) {
-              $sidebar.stop().animate({
+              $sidebar.stop().css({
                   marginTop: $window.scrollTop() - offset.top + topPadding
               });
           } else {
